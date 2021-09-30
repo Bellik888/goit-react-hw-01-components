@@ -1,5 +1,5 @@
 import './App.css';
-import { Profile } from './components/Profile';
+import { Profile } from './components/Profile/Profile';
 import user from './json/user.json';
 
 function App() {
@@ -10,7 +10,9 @@ function App() {
         name={user.name}
         tag={user.tag}
         location={user.location}
-        stats={user.stats}
+        likes={user.stats.likes}
+        followers={user.stats.followers}
+        views={user.stats.views}
       />
     </div>
   );
