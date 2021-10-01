@@ -21,26 +21,3 @@
   display: flex;
   background-color: teal;
 }
-.item {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100px;
-  padding-right: 30px;
-  padding-left: 30px;
-  justify-content: center;
-  align-items: center;
-}
-.item:not(:first-child) {
-  border-left: 1px solid rgb(3, 90, 90);
-}
-.label {
-  color: white;
-}
-.percentage {
-  color: white;
-  font-size: 30px;
-  line-height: 1.4;
-  margin-top: 5px;
-}

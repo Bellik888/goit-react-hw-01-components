@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
+import { StatisticsItem } from './StatisticsItem/StatisticsItem';
 
 export const Statistics = ({ stats, title = 'Upload stats' }) => {
   return (
@@ -8,18 +9,13 @@ export const Statistics = ({ stats, title = 'Upload stats' }) => {
 
       <ul className={s.statList}>
         {stats.map(item => (
-          <li className={s.item} key={item.id}>
-            <span className={s.label}>{item.label}</span>
-            <span className={s.percentage}>{item.percentage}%</span>
-          </li>
+          <StatisticsItem
+            key={item.id}
+            label={item.label}
+            percentage={item.percentage}
+          />
         ))}
       </ul>
     </section>
   );
-};
-
-Statistics.propTypes = {
-  id: PropTypes.number.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
 };

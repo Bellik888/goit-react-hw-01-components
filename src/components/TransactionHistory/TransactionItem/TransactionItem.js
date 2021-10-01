@@ -1,4 +1,4 @@
-import s from './TransactionItem.module.css';
+import './TransactionItem.module.css';
 import PropTypes from 'prop-types';
 
 export const TransactionItem = ({ type, amount, currency }) => {
