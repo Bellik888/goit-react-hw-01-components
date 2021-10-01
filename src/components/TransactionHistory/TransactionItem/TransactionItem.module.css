@@ -1,0 +1,12 @@
+td {
+  text-align: center;
+  height: 40px;
+  width: 250px;
+}
+td:not(:first-child) {
+  border-left: 1px solid rgba(163, 161, 161, 0.527);
+}
+
+tr:nth-child(2n) {
+  background-color: hsl(300, 3%, 94%);
+}

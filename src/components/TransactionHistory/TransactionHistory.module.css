@@ -1,0 +1,15 @@
+.transactionHistory {
+  /* background-color: rgba(255, 255, 0, 0.404); */
+  margin: 50px auto;
+  width: 750px;
+  border: 1px solid rgba(163, 161, 161, 0.527);
+  border-collapse: collapse;
+}
+thead {
+  background-color: rgb(8, 223, 252);
+  height: 50px;
+  color: white;
+}
+th:not(:first-child) {
+  border-left: 1px solid white;
+}
