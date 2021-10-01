@@ -1,10 +1,12 @@
 import './App.css';
-import { FriendList } from './components/FriendList/FriendList';
-import friends from './components/FriendList/friends.json';
 import { Profile } from './components/Profile/Profile';
 import user from './components/Profile/user.json';
 import { Statistics } from './components/Statistics/Statistics';
 import statistics from './components/Statistics/statistics.json';
+// import { FriendList } from './components/FriendList/FriendList';
+// import friends from './components/FriendList/friends.json';
+// import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
+// import transactions from './components/TransactionHistory/transactions.json';
 
 function App() {
   return (
@@ -18,8 +20,9 @@ function App() {
         followers={user.stats.followers}
         views={user.stats.views}
       />
-      <Statistics statistics={statistics} />
-      <FriendList friends={friends} />
+      <Statistics stats={statistics} />
+      {/* // <FriendList friends={friends} />
+      // <TransactionHistory transactions={transactions }/> */}
     </div>
   );
 }

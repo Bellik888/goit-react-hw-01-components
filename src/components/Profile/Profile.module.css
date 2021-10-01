@@ -1,0 +1,48 @@
+.wrapper {
+  background-color: rgb(180, 201, 201);
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.profile {
+  background-color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  max-height: 500px;
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+.description {
+  display: block;
+  padding-top: 50px;
+  text-align: center;
+}
+.avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stats {
+  display: flex;
+  height: 100px;
+  list-style: none;
+  background-color: rgb(228, 226, 226);
+  padding: 0;
+  margin: 0;
+}
+.stats > li {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(160, 159, 159);
+}
