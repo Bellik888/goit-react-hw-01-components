@@ -1,6 +1,6 @@
-// import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 import { StatisticsItem } from './StatisticsItem/StatisticsItem';
+import randomColor from './randomColor/randomColor';
 
 export const Statistics = ({ stats, title = 'Upload stats' }) => {
   return (
@@ -8,11 +8,12 @@ export const Statistics = ({ stats, title = 'Upload stats' }) => {
       {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.statList}>
-        {stats.map(item => (
+        {stats.map(stat => (
           <StatisticsItem
-            key={item.id}
-            label={item.label}
-            percentage={item.percentage}
+            key={stat.id}
+            label={stat.label}
+            percentage={stat.percentage}
+            bgColor={randomColor()}
           />
         ))}
       </ul>
